@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postal Rate Forms</title>
+</head>
+<body>
+    <h1>Postal Rate Form</h1>
+    <form action="/getRate" method="get">
+    <label for="weight">Please enter your item's weight in ounces</label> <input type="text" name="weight"><br><br>
+    <label for="packageType">Package Type: </label><select name="packageType">
+        <option>Letter-Stamped</option>
+        <option>Letter-Metered</option>
+        <option>Large-Envelope-Flat</option>
+        <option>First-Class-Package-Service-Retail</option>
+    </select><br><br>
+    <input type="submit" value="Get Postal Rate">
+    </form>
+</body>
+</html>
